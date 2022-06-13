@@ -24,28 +24,28 @@ a {
   margin: 0 auto;
 }
  
-header {
+#hero {
   background-color: #D9A384;
   grid-column-start: 1;
   grid-column-end: 4;
 }
  
-aside {
+#menu {
   grid-column-start: 1;
   grid-column-end: 2;
 }
  
-main {
+#about {
   grid-column-start: 2;
   grid-column-end: 3;
 }
  
-section {
+#schedule {
   grid-column-start: 3;
   grid-column-end: 4;
 }
  
-footer {
+#bottom {
   background-color: #1E2226;
   grid-column-start: 1;
   grid-column-end: 4;
@@ -84,12 +84,12 @@ a.button {
   text-transform: uppercase;
 }
  
-@media (max-width:600px) {
+@media (max-width:800px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 100px auto auto auto;
   }
-  header,aside,main,section,footer {
+  #hero,#menu,#about,#schedule,#bottom {
     grid-column-start: 1;
     grid-column-end: 2;
   }
